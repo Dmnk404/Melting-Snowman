@@ -60,12 +60,3 @@ def play_game():
                 print(f"\n{Fore.RED}💀 Oh no! The snowman melted.{Style.RESET_ALL}")
                 print(f"{Fore.YELLOW}📖 The secret word was: {secret_word}{Style.RESET_ALL}")
                 break
-
-
-if __name__ == "__main__":
-    while True:
-        play_game()
-        again = input(f"\n{Fore.MAGENTA}🔁 Play again? (y/n): {Style.RESET_ALL}").strip().lower()
-        if again != "y":
-            print(f"{Fore.CYAN}👋 Thanks for playing! Goodbye!{Style.RESET_ALL}")
-            break
